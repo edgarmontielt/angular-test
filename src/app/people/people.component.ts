@@ -1,16 +1,18 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: "app-people",
-    // templateUrl: "./people.component.html",
-    template:`<div>
-        <h4>Name: {{ name }}</h4>
-        <app-person></app-person>
-        <app-person></app-person>
-    </div>`
+    templateUrl: "./people.component.html",
 })
 class PeopleComponent {
-    name =  "Edgar"
+    isLog = false
+    value = "Angular"
+    name =  "Edgar";
+
+    logIn(): void {
+        console.log("value", this.isLog)
+        this.isLog = !this.isLog
+    }
 }
 
 export default PeopleComponent
