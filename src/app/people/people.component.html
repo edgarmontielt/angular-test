@@ -1,4 +1,11 @@
 <div>
-    <h1 class="font-medium text-3xl p-4">Listado de personas</h1>
+    <div>
+        <h1 class="font-medium text-4xl pt-4 pb-4">Listado de personas</h1>
+        <button 
+            [disabled]="disabled" 
+            class="bg-blue-600 text-white p-3 rounded"
+            (click)="disabledBtn()"
+            >New Person</button>
+    </div>
     <app-person></app-person>
 </div>

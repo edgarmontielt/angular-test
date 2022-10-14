@@ -5,7 +5,12 @@ import { Component, Input } from "@angular/core";
     templateUrl: "./people.component.html",
 })
 class PeopleComponent {
+    disabled = false
 
+    disabledBtn(): void {
+        this.disabled = true
+        console.log(this.disabled)
+    }
 }
 
 export default PeopleComponent
