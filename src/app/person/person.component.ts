@@ -8,18 +8,18 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PersonComponent implements OnInit {
 
   private name = "Edgar";
-  lastName = "Montiel";
-  age = 20;
+  lastName: string = "Montiel";
+  age: number = 20;
 
   ngOnInit(): void {
   }
 
   getName(): string {
-    return this.name
+    return this.name;
   }
 
   setName(name: string): void {
-    this.name = name
+    this.name = name;
   }
 
 }

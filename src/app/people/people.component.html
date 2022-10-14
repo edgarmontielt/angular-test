@@ -6,6 +6,18 @@
             class="bg-blue-600 text-white p-3 rounded"
             (click)="disabledBtn()"
             >New Person</button>
+            <p>{{ getMessage() }}</p>
     </div>
     <app-person></app-person>
+
+    
+    <section class=" flex flex-col w-1/4">
+        <label>Person Title:</label>
+        <input 
+            type="text" 
+            class=" border-[2px] border-stone-500 outline-none"
+            (input)="titleModify($event)"
+        />
+        <p>{{ title }}</p>
+    </section>
 </div>
