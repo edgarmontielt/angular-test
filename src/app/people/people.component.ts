@@ -10,12 +10,13 @@ type Result = {
     templateUrl: "./people.component.html",
 })
 class PeopleComponent {
-    disabled: boolean = false;
+    public disabled: boolean = false;
     private result: Result = {
         message: "No se ha registrado ninguna persona",
         success: false
     };
     title: string = "";
+    public imgURL: string = "https://images.pexels.com/photos/13715795/pexels-photo-13715795.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load";
 
     disabledBtn(): void {
         this.result.message = "Persona agregada";
@@ -30,7 +31,7 @@ class PeopleComponent {
 
     titleModify(event: Event): void {
         console.log("Modificando title");
-        this.title = (<HTMLInputElement>event.target).value
+        this.title = (<HTMLInputElement>event.target).value;
     }
 }
 
