@@ -6,13 +6,20 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./person.component.css']
 })
 export class PersonComponent implements OnInit {
-  @Input() value: string = "";
-  @Input() isLog: boolean = false
-  name: string = "Edgar"
 
-  constructor() { }
+  private name = "Edgar";
+  lastName = "Montiel";
+  age = 20;
 
   ngOnInit(): void {
+  }
+
+  getName(): string {
+    return this.name
+  }
+
+  setName(name: string): void {
+    this.name = name
   }
 
 }

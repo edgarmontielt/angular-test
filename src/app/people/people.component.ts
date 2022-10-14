@@ -5,14 +5,7 @@ import { Component, Input } from "@angular/core";
     templateUrl: "./people.component.html",
 })
 class PeopleComponent {
-    isLog = false
-    value = "Angular"
-    name =  "Edgar";
 
-    logIn(): void {
-        console.log("value", this.isLog)
-        this.isLog = !this.isLog
-    }
 }
 
 export default PeopleComponent

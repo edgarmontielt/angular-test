@@ -1,8 +1,4 @@
 <div>
     <h1 class="font-medium text-3xl p-4">Listado de personas</h1>
-    <app-person [value]="value" [isLog]="isLog"></app-person>
-    <app-person [value]="value"></app-person>
-    <button (click)="logIn()" class=" bg-slate-700 text-white p-4 rounded-md">
-        {{ (isLog ? "Logout" : "SignIn") }}
-    </button>
+    <app-person></app-person>
 </div>
