@@ -4,6 +4,6 @@ import { Component } from "@angular/core";
     selector: "app-home-layout",
     templateUrl: "./home.component.html"
 })
-class HomeLayout {}
+class HomeLayout {};
 
-export default HomeLayout
+export default HomeLayout;

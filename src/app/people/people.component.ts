@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component } from "@angular/core";
 
 type Result = {
     message: string,
@@ -10,13 +10,13 @@ type Result = {
     templateUrl: "./people.component.html",
 })
 class PeopleComponent {
-    public disabled: boolean = false;
+    disabled: boolean = false;
     private result: Result = {
         message: "No se ha registrado ninguna persona",
         success: false
     };
-    title: string = "";
-    public imgURL: string = "https://images.pexels.com/photos/13715795/pexels-photo-13715795.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load";
+    title: string = "Ingeniero";
+    imgURL: string = "https://images.pexels.com/photos/13715795/pexels-photo-13715795.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load";
 
     disabledBtn(): void {
         this.result.message = "Persona agregada";
@@ -29,10 +29,11 @@ class PeopleComponent {
         return this.result.message;
     }
 
-    titleModify(event: Event): void {
-        console.log("Modificando title");
-        this.title = (<HTMLInputElement>event.target).value;
-    }
+    // Event binding
+    // titleModify(event: Event): void {
+    //     console.log("Modificando title");
+    //     this.title = (<HTMLInputElement>event.target).value;
+    // }
 }
 
 export default PeopleComponent
