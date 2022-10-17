@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import CalculatorComponent from './calculator/calculator.component';
 import NavComponent from './components/navigation/nav.component';
 import HomeLayout from './layouts/home/home.component';
 import PeopleComponent from './people/people.component';
@@ -14,6 +15,7 @@ import { PersonComponent } from './person/person.component';
     AppComponent,
     PeopleComponent,
     PersonComponent,
+    CalculatorComponent,
     NavComponent
   ],
   imports: [

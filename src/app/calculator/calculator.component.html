@@ -1,0 +1,32 @@
+<section class="">
+    <h1 class=" text-4xl font-medium mt-10">Calculator</h1>
+    <div class="flex flex-col mt-4">
+        <label for="valueA">Value A:</label>
+        <input 
+            id="valueA"
+            type="number" 
+            class=" border-[2px] border-stone-500 outline-none p-2 rounded-md"
+            [(ngModel)]="valueA"
+            (input)="add()"
+        />
+    </div>
+    <div class="flex flex-col mt-4">
+        <label for="valueB">Value B:</label>
+        <input 
+            id="valueB"
+            type="number" 
+            class=" border-[2px] border-stone-500 outline-none p-2 rounded-md"
+            [(ngModel)]="valueB"
+            (input)="add()"
+        />
+    </div>
+    <div class="flex flex-col mt-4">
+        <label for="result">Result:</label>
+        <input 
+            id="result"
+            type="number" 
+            class=" border-[2px] border-stone-500 outline-none p-2 rounded-md"
+            [(ngModel)]="result"
+        />
+    </div>
+</section>
