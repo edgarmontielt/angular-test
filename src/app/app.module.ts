@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -8,6 +7,11 @@ import NavComponent from './components/navigation/nav.component';
 import HomeLayout from './layouts/home/home.component';
 import PeopleComponent from './people/people.component';
 import { PersonComponent } from './person/person.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatNativeDateModule} from '@angular/material/core';
+import { MaterialExampleModule } from './material/material.module';
+import InputComponent  from '../app/ui/material/input.component'
 
 @NgModule({
   declarations: [
@@ -16,11 +20,16 @@ import { PersonComponent } from './person/person.component';
     PeopleComponent,
     PersonComponent,
     CalculatorComponent,
-    NavComponent
+    NavComponent,
+    InputComponent
   ],
   imports: [
-    BrowserModule, 
-    FormsModule
+    BrowserModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    MatNativeDateModule,
+    MaterialExampleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
