@@ -22,7 +22,6 @@ class PeopleComponent {
         this.result.message = "Persona agregada";
         this.result.success = true;
         this.disabled = true;
-        alert(this.result.message);
     }
 
     getMessage(): string {
