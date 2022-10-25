@@ -1,22 +1,33 @@
 <div>
-    <div>
-        <h1 class="font-medium text-4xl pt-4 pb-4">Listado de personas</h1>
-        <button [disabled]="disabled" class="bg-blue-600 text-white p-3 rounded" (click)="disabledBtn()">New
-            Person</button>
-        <p *ngIf="disabled; else sinPerson">{{ getMessage() }} con el title {{title}}</p>
-        <ng-template #sinPerson>
-            <p>No se ha agregado ninguna persona</p>
-        </ng-template>
-    </div>
-    <app-person></app-person>
+  <div>
+    <h1 class="font-medium text-4xl pt-4 pb-4">Listado de personas</h1>
+    <button
+      [disabled]="disabled"
+      class="bg-blue-600 text-white p-3 rounded"
+      (click)="disabledBtn()"
+    >
+      New Person
+    </button>
+    <p *ngIf="disabled; else sinPerson">
+      {{ getMessage() }} con el title {{ title }}
+    </p>
+    <ng-template #sinPerson>
+      <p>No se ha agregado ninguna persona</p>
+    </ng-template>
+  </div>
+  <app-person></app-person>
 
-    <section class=" flex flex-col w-1/4">
-        <label>Person Title:</label>
-        <input type="text" class=" border-[2px] border-stone-500 outline-none" [(ngModel)]="title" />
-        <p>{{ title }}</p>
-    </section>
+  <section class="flex flex-col w-1/4">
+    <label>Person Title:</label>
+    <input
+      type="text"
+      class="border-[2px] border-stone-500 outline-none"
+      [(ngModel)]="title"
+    />
+    <p>{{ title }}</p>
+  </section>
 
-    <app-calculator></app-calculator>
+  <app-calculator></app-calculator>
 
-    <app-input-component></app-input-component>
+  <app-input-component></app-input-component>
 </div>

@@ -12,6 +12,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
 import { MaterialExampleModule } from './material/material.module';
 import InputComponent  from '../app/ui/material/input.component'
+import FooterComponent from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import InputComponent  from '../app/ui/material/input.component'
     PersonComponent,
     CalculatorComponent,
     NavComponent,
-    InputComponent
+    InputComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
