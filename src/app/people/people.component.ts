@@ -15,7 +15,7 @@ class PeopleComponent {
         message: "No se ha registrado ninguna persona",
         success: false
     };
-    title: string = "Ingeniero";
+    title: string = "Ingeniero en software";
     imgURL: string = "https://images.pexels.com/photos/13715795/pexels-photo-13715795.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load";
 
     disabledBtn(): void {

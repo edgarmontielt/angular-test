@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>{{ title }}</h1>
+
+  <div class="search-bar">
+    <input
+      type="text"
+      class=" w-full outline-none mb-6 p-2"
+      placeholder="Escribe"
+      (keyup)="filterList($event)"
+    />
+  </div>
+
+  <ul class="">
+    <li *ngFor="let item of listFiltered">{{ item }}</li>
+  </ul>
+</div>

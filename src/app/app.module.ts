@@ -12,6 +12,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
 import { MaterialExampleModule } from './material/material.module';
 import InputComponent  from '../app/ui/material/input.component'
+import SearchComponent  from '../app/search/search.component'
 import FooterComponent from './components/footer/footer.component';
 
 @NgModule({
@@ -23,6 +24,7 @@ import FooterComponent from './components/footer/footer.component';
     CalculatorComponent,
     NavComponent,
     InputComponent,
+    SearchComponent,
     FooterComponent
   ],
   imports: [
@@ -31,7 +33,7 @@ import FooterComponent from './components/footer/footer.component';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MatNativeDateModule,
-    MaterialExampleModule
+    MaterialExampleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
