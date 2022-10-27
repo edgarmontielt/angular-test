@@ -1,16 +1,16 @@
-<div class="container">
-  <h1>{{ title }}</h1>
+<div class=" mt-20 ">
+  <h1 class=" text-3xl">{{ title }}</h1>
 
   <div class="search-bar">
     <input
       type="text"
-      class=" w-full outline-none mb-6 p-2"
-      placeholder="Escribe"
+      class=" w-full outline-none mb-6 p-2 border"
+      placeholder="Escribe para buscar..."
       (keyup)="filterList($event)"
     />
   </div>
 
-  <ul class="">
-    <li *ngFor="let item of listFiltered">{{ item }}</li>
+  <ul class="flex flex-col gap-3">
+    <li class="text-md" *ngFor="let item of listFiltered">{{ item }}</li>
   </ul>
 </div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 
+
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -22,6 +23,10 @@ class SearchComponent implements OnInit {
     'Diseñar',
     'Especificar',
     'Usuarios',
+    'Mejoras',
+    'Actualización',
+    'Escalabilidad',
+    'Pruebas'
   ];
   public listFiltered: string[] = [];
 
@@ -32,13 +37,13 @@ class SearchComponent implements OnInit {
 
   filterList(event: any): void {
     const term: string = event.target.value;
-    console.log('Hello', event.target.value);
+    console.log(event.target.value);
     this.listFiltered = this.listQuestions.filter(
       (item) => item.toLowerCase().indexOf(term.toLowerCase()) >= 0
     );
     // this.searchQuestions$
-    //   .pipe(debounceTime(400), distinctUntilChanged())
     //   .subscribe((term) => {
+    //     console.log(term)
     //     this.listFiltered = this.listQuestions.filter(
     //       (item) => item.toLowerCase().indexOf(term.toLowerCase()) >= 0
     //     );
