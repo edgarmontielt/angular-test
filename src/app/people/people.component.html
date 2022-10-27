@@ -30,5 +30,32 @@
   <!-- <app-calculator></app-calculator>
   <app-input-component></app-input-component> -->
 
+  <!-- <button
+    (click)="getCharacters()"
+    class="bg-blue-600 p-5 rounded-md text-white"
+  >
+    GET
+  </button> -->
 
+  <ul class="flex flex-col">
+    <li
+      *ngFor="let item of characters.results"
+      class="flex gap-2 items-center hover:bg-gray-200 p-2 cursor-pointer"
+    >
+      <img class="w-10 h-10 rounded-full" src="{{ item.image }}" />
+      <span>{{ item.name }}</span>
+      <div
+        *ngIf="item.status === 'Alive'"
+        class="w-2 h-2 bg-green-500 rounded-full"
+      ></div>
+      <div
+        *ngIf="item.status === 'Dead'"
+        class="w-2 h-2 bg-red-500 rounded-full"
+      ></div>
+      <div
+        *ngIf="item.status === 'unknown'"
+        class="w-2 h-2 bg-gray-500 rounded-full"
+      ></div>
+    </li>
+  </ul>
 </div>
