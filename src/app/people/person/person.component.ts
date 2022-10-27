@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PersonComponent implements OnInit {
 
+  @Input() item: any = []
+
   private name = "Edgar";
   lastName: string = "Montiel";
   age: number = 20;

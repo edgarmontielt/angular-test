@@ -1,0 +1,24 @@
+<!-- <div>
+  <p>Nombre: {{ getName() }}, Apellido: {{ lastName }}, Age: {{ age }}</p>
+
+  <div (keyup)="(0)">
+    <label>Repetidor:</label>
+    <input #enter />
+    <p>{{ enter.value }}</p>
+  </div>
+</div> -->
+
+<img class="w-10 h-10 rounded-full" src="{{ item.image }}" />
+<span>{{ item.name }}</span>
+<div
+  *ngIf="item.status === 'Alive'"
+  class="w-2 h-2 bg-green-500 rounded-full"
+></div>
+<div
+  *ngIf="item.status === 'Dead'"
+  class="w-2 h-2 bg-red-500 rounded-full"
+></div>
+<div
+  *ngIf="item.status === 'unknown'"
+  class="w-2 h-2 bg-gray-500 rounded-full"
+></div>

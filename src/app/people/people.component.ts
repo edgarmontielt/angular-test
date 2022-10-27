@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { CharactersService } from "../services/characters.service";
 
 type Result = {
@@ -11,6 +11,7 @@ type Result = {
     templateUrl: "./people.component.html",
 })
 class PeopleComponent implements OnInit {
+
     disabled: boolean = false;
     private result: Result = {
         message: "No se ha registrado ninguna persona",

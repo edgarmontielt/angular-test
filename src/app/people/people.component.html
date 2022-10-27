@@ -38,24 +38,10 @@
   </button> -->
 
   <ul class="flex flex-col">
-    <li
+    <app-person
       *ngFor="let item of characters.results"
-      class="flex gap-2 items-center hover:bg-gray-200 p-2 cursor-pointer"
-    >
-      <img class="w-10 h-10 rounded-full" src="{{ item.image }}" />
-      <span>{{ item.name }}</span>
-      <div
-        *ngIf="item.status === 'Alive'"
-        class="w-2 h-2 bg-green-500 rounded-full"
-      ></div>
-      <div
-        *ngIf="item.status === 'Dead'"
-        class="w-2 h-2 bg-red-500 rounded-full"
-      ></div>
-      <div
-        *ngIf="item.status === 'unknown'"
-        class="w-2 h-2 bg-gray-500 rounded-full"
-      ></div>
-    </li>
+      [item]="item"
+      class="flex items-center gap-2 p-2 cursor-pointer hover:bg-gray-100"
+    ></app-person>
   </ul>
 </div>
