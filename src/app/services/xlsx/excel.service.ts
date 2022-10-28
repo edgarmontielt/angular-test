@@ -31,7 +31,7 @@ export class ExcelService {
     });
     FileSaver.saveAs(
       data,
-      fileName + '_export_' + new Date().getTime() + EXCEL_EXTENSION
+      fileName + EXCEL_EXTENSION
     );
   }
 }
