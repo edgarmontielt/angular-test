@@ -25,7 +25,7 @@ class PeopleComponent implements OnInit {
     constructor(private characterService: CharactersService) { }
 
     ngOnInit(): void {
-        this.getCharacters();
+        // this.getCharacters();
     }
 
     disabledBtn(): void {

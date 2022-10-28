@@ -1,0 +1,30 @@
+<div class="flex items-center">
+  <h2 class="text-3xl">{{ Title }}</h2>
+  <button
+    class="bg-green-800 text-white p-2 rounded ml-auto"
+    (click)="onSave()"
+  >
+    Exportar XLSX
+  </button>
+</div>
+<div class="mt-10 mb-10" role="main">
+  <table class="w-2/3 text-left text-gray-500 ">
+    <thead
+      class="text-gray-700 uppercase bg-gray-50"
+    >
+    <th class="py-4 px-6">ID</th>
+      <th class="py-4 px-6">Name</th>
+      <th class="py-4 px-6">Address</th>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let row of rows"
+        class="bg-white border-b"
+      >
+      <td class="py-4 px-6">{{ row.ID }}</td>
+        <td class="py-4 px-6">{{ row.Name }}</td>
+        <td class="py-4 px-6">{{ row.Address }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
