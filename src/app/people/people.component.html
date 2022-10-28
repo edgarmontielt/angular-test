@@ -9,7 +9,7 @@
       New Person
     </button>
     <p *ngIf="disabled; else sinPerson">
-      {{ getMessage() }} con el title {{ title }}
+      {{ getMessage() }} con el título {{ title }}
     </p>
     <ng-template #sinPerson>
       <p>No se ha agregado ninguna persona</p>
