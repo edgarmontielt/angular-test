@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Qué es una Lista de Actividades?",
+    "respuesta": "La Hoja de Actividades es una herramienta de Gestión en la cual los colaboradores registran diariamente sus actividades más relevantes, asegurando que al final del día, atiende y resuelve las desviaciones que se presentan y, actúa de manera proactiva y preventiva sobre los resultados que por tendencia debe controlar.",
+    "comentarioAdicional": "La Lista de Actividades debe alinearse al ORDO, esto es, las actividades a gestionar deben tener congruencia con las responsabilidades del puesto, con los indicadores de HK y con los tableros de RPD.",
+    "herramienta": "Lista de Actividades",
+    "relevancia": 1
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Por qué se usa la Lista de Actividades en SuKarne?",
+    "respuesta": "Porque usándola, - El colaborador conoce y tiene claridad de su contrubución al realizar las actividades que desempeña diariamente. - Existe evidencia clara de las actividades que realiza y las que no realiza. - El Jefe Inmediato está al tanto del desempeño de su colaborador y retroalimenta para buscar la mejora. - Es posible detectar incumplimientos, retrasos o problemas y atenderlos con oportunidad.",
+    "comentarioAdicional": "La retroalimentación del Jefe a través de la revisión de la Lista de Actividades, es un factor primordial para la mejora del desempeño de los colaboradores.",
+    "herramienta": "Lista de Actividades",
+    "relevancia": 1
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Para qué puestos aplica la Lista de Actividades?",
+    "respuesta": "Todos los colaboradores desde nivel supervisión hasta nivel dirección, deben usar la Lista de Actividades.",
+    "comentarioAdicional": "Desde Supervisores a Gerentes deben utilizar el formato de Lista de Actividades semanal. Los Directorres deben utilizar el formato de Lista de Actividades mensual.",
+    "herramienta": "Lista de Actividades",
+    "relevancia": 1
+  }
+]

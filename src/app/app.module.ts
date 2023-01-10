@@ -15,9 +15,9 @@ import { MaterialExampleModule } from './material/material.module';
 import InputComponent from '../app/ui/material/input.component';
 import SearchComponent from '../app/search/search.component';
 import FooterComponent from './components/footer/footer.component';
-import { UIModule } from './ui/ui.module';
 import DocumentComponent from './ui/xlsx/doc.component';
 import { ExcelService } from './services/xlsx/excel.service';
+import { CollapseModule } from './collapse/collapse.module';
 
 @NgModule({
   declarations: [
@@ -40,7 +40,7 @@ import { ExcelService } from './services/xlsx/excel.service';
     MatNativeDateModule,
     MaterialExampleModule,
     HttpClientModule,
-    // UIModule,
+    CollapseModule,
   ],
   providers: [ExcelService],
   bootstrap: [AppComponent],

@@ -1,0 +1,33 @@
+<section class="py-28">
+  <h2 class="mt-10 mb-20 text-center text-[#535353] font-medium text-4xl">
+    Preguntas Comunes
+  </h2>
+  <button class="" (click)="viewAllAnswers()">Desplegar todas</button>
+  <ul class="flex flex-col gap-5 m-5">
+    <li
+      *ngFor="let item of questionsArray"
+      class="bg-[#F2F2F2] rounded shadow-md"
+      id="{{ item.id }}"
+    >
+      <p
+        class="py-4 px-6 text-[#535353] text-lg font-medium hover:bg-[#ebebeb] cursor-pointer"
+        (click)="viewAnswer(item.id)"
+      >
+        {{ item.pregunta }}
+      </p>
+      <div
+        *ngIf="view"
+        class="bg-white top-0 p-6 text-[#7c7c7c] font-normal text-sm"
+      >
+        <p>{{ item.respuesta }}</p>
+        <div class="mt-5">
+          <h6 class="text-[#3F3F3F] font-medium text-base mb-3">
+            Comentario Adicional
+          </h6>
+          <p>{{ item.comentarioAdicional }}</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <app-question></app-question>
+</section>

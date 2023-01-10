@@ -29,17 +29,21 @@
 
   <!-- <app-calculator></app-calculator>
   <app-input-component></app-input-component> -->
-
-  <!-- <button
+<!-- 
+  <button
     (click)="getCharacters()"
     class="bg-blue-600 p-5 rounded-md text-white"
   >
     GET
   </button> -->
 
-  <ul class="flex flex-col">
+  <div class="flex mt-32">
+    <input placeholder="Enter the name" class=" border-stone-500 border-b-[1px] outline-none p-2 w-2/4 ml-auto mr-auto"/>
+  </div>
+
+  <ul class="grid grid-cols-4 gap-4 max-w-full mt-20">
     <app-person
-      *ngFor="let item of characters.results"
+      *ngFor="let item of characters"
       [item]="item"
       class="flex items-center gap-2 p-2 cursor-pointer hover:bg-gray-100"
     ></app-person>
