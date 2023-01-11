@@ -7,8 +7,10 @@
       class="bg-red-600 p-2 rounded-sm m-6 text-gray-100 font-medium ml-auto"
       (click)="viewAllAnswers()"
     >
-      Desplegar todas
+      <span *ngIf="!view; else noView">Desplegar todas</span>
+      <ng-template #noView>Cerrar Todas</ng-template>
     </button>
+    
   </div>
   <ul class="flex flex-col gap-5 m-5">
     <li
@@ -16,7 +18,7 @@
       class="bg-[#F2F2F2] rounded shadow-md"
       id="{{ item.id }}"
     >
-      <app-question [item]="item"></app-question>
+      <app-question [item]="item" [view]="view"></app-question>
     </li>
   </ul>
 </section>

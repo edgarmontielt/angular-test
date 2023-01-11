@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import questions from '../../data/questions.json';
 import Questions from './types';
 
@@ -10,7 +10,7 @@ import Questions from './types';
 class CollapseComponent implements OnInit {
 
   public questionsArray: Questions[] = [];
-  public view: boolean = false;
+  view: boolean = false;
 
   ngOnInit(): void {
     this.questionsArray = questions;

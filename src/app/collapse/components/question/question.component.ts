@@ -8,8 +8,8 @@ import Questions from '../../types';
 })
 class QuestionComponent implements OnInit {
   @Input() item: Questions | any = {};
+  @Input() view: boolean = false;
 
-  public view: boolean = false;
   ngOnInit(): void {}
 
   viewAnswer(): void {
